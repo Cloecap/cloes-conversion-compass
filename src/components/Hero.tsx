@@ -8,25 +8,18 @@ const Hero = () => {
       <div className="absolute inset-0 gradient-primary opacity-5"></div>
       
       <div className="container mx-auto max-w-7xl px-4 py-16">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-12 gap-6 items-center">
           {/* Contenu textuel */}
-          <div className="space-y-8 lg:pr-8">
-            {/* Badge principal */}
-            <div className="inline-flex items-center gap-2 bg-secondary/20 text-secondary-foreground px-4 py-2 rounded-full text-sm font-medium">
-              <span className="w-2 h-2 bg-secondary rounded-full"></span>
-              POUR LES MARQUES QUI VEULENT FAIRE BOUGER LES MONTAGNES
-            </div>
-
+          <div className="col-span-8 space-y-8">
             {/* Titre principal */}
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-dark leading-tight">
-              Je vous aide à raconter votre{" "}
-              <span className="text-primary">aventure</span>.
+              🚀 Une communication claire et stratégique pour faire{" "}
+              <span className="text-primary">décoller</span> votre business.
             </h1>
 
             {/* Sous-titre */}
             <p className="font-body text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Communication, marketing et contenu pour les marques outdoor et les PME ambitieuses. 
-              <span className="text-primary font-semibold">✏️ Gagnez en visibilité, crédibilité et clients</span> — sans vous perdre dans la technique.
+              Je vous accompagne dans la création de vos contenus, l'élaboration de votre stratégie et le développement de votre visibilité — sur les réseaux, sur le web et partout ailleurs.
             </p>
 
             {/* CTAs */}
@@ -48,7 +41,7 @@ const Hero = () => {
                 asChild
               >
                 <a href="#portfolio">
-                  📁 Voir mon portfolio
+                  Voir comment j'ai aidé d'autres marques à rayonner
                 </a>
               </Button>
             </div>
@@ -68,16 +61,16 @@ const Hero = () => {
           </div>
 
           {/* Photo personnelle intégrée */}
-          <div className="relative lg:order-last">
+          <div className="col-span-4 relative">
             <div className="relative">
               <img 
                 src="/lovable-uploads/03224d1c-b36a-42b5-8b64-0721f2c5c984.png" 
                 alt="Cloé Capdordy dans la neige avec une veste orange Simond"
-                className="w-full h-auto rounded-2xl shadow-2xl object-cover"
+                className="w-full h-auto rounded-2xl shadow-2xl object-cover max-h-80 lg:max-h-96"
               />
               {/* Overlay décoratif */}
-              <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-secondary rounded-full opacity-20 blur-xl"></div>
-              <div className="absolute -top-6 -right-6 w-32 h-32 bg-primary rounded-full opacity-10 blur-xl"></div>
+              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-secondary rounded-full opacity-20 blur-xl"></div>
+              <div className="absolute -top-4 -right-4 w-20 h-20 bg-primary rounded-full opacity-10 blur-xl"></div>
             </div>
           </div>
         </div>
