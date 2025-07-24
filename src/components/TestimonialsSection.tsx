@@ -52,7 +52,7 @@ const TestimonialsSection = () => {
       <div className="container mx-auto max-w-6xl px-4">
         <div className="text-center mb-16">
           <h2 className="font-heading text-3xl md:text-5xl font-bold text-dark mb-6">
-            Ce que disent mes <span className="text-secondary">clients</span>
+            Témoignages <span className="text-secondary">clients</span>
           </h2>
           <p className="font-body text-xl text-muted-foreground max-w-3xl mx-auto">
             Des témoignages authentiques de dirigeants qui ont vu leur business se transformer 
@@ -91,24 +91,6 @@ const TestimonialsSection = () => {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* Logos partenaires */}
-        <div className="text-center">
-          <h3 className="font-heading text-2xl font-bold text-dark mb-8">
-            Ils m'ont fait confiance
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
-            {partners.map((partner, index) => (
-              <div key={index} className="grayscale hover:grayscale-0 transition-smooth">
-                <img 
-                  src={partner.logo} 
-                  alt={partner.name}
-                  className="h-16 w-auto object-contain filter hover:scale-110 transition-smooth"
-                />
-              </div>
-            ))}
-          </div>
         </div>
 
         {/* Social proof */}

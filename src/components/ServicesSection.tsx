@@ -89,7 +89,7 @@ const ServicesSection = () => {
               href="https://calendly.com/capdordycloe/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 py-3 rounded-lg font-semibold transition-smooth"
+              className="inline-block bg-secondary hover:bg-secondary/90 text-white px-8 py-3 rounded-lg font-semibold transition-smooth"
             >
               Discuter de mon projet
             </a>

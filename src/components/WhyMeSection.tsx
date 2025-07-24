@@ -20,7 +20,7 @@ const WhyMeSection = () => {
     {
       icon: "🌍",
       title: "Bilingue FR/EN, expérience internationale",
-      description: "Une expertise qui s'étend au-delà des frontières, avec une compréhension des marchés francophones et anglophones."
+      description: "Une expertise qui s'étend au-delà des frontières, avec une compréhension des marchés Français et Canadiens."
     },
     {
       icon: "❤️",

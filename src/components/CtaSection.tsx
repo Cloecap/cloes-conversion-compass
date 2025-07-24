@@ -43,11 +43,11 @@ const CtaSection = () => {
           <div className="mb-8">
             <Button 
               size="lg" 
-              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-12 py-4 text-xl font-bold transition-smooth shadow-lg hover:shadow-xl"
+              className="bg-white hover:bg-white/90 text-dark px-12 py-4 text-xl font-bold transition-smooth shadow-lg hover:shadow-xl"
               asChild
             >
               <a href="https://calendly.com/capdordycloe/30min" target="_blank" rel="noopener noreferrer">
-                Réserver un appel découverte
+                Réserver votre appel
               </a>
             </Button>
           </div>

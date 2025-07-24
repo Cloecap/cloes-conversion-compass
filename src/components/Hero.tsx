@@ -26,10 +26,10 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button 
                 size="lg" 
-                className="bg-secondary hover:bg-secondary/90 text-secondary-foreground px-8 py-4 text-lg font-semibold transition-smooth"
+                className="bg-secondary hover:bg-secondary/90 text-white px-8 py-4 text-lg font-semibold transition-smooth"
                 asChild
               >
-                <a href="https://calendly.com/capdordycloe/30min?month=2025-07&date=2025-07-29" target="_blank" rel="noopener noreferrer">
+                <a href="https://calendly.com/capdordycloe/30min" target="_blank" rel="noopener noreferrer">
                   → Réserver un appel découverte
                 </a>
               </Button>
@@ -41,22 +41,16 @@ const Hero = () => {
                 asChild
               >
                 <a href="#portfolio">
-                  Voir comment j'ai aidé d'autres marques à rayonner
+                  Voir le portfolio
                 </a>
               </Button>
             </div>
 
-            {/* Badges de confiance */}
-            <div className="flex flex-wrap gap-3 pt-4">
-              <Badge variant="outline" className="px-3 py-1 text-xs">
-                ✅ +5 ans d'expérience
-              </Badge>
-              <Badge variant="outline" className="px-3 py-1 text-xs">
-                🏔️ Spécialiste outdoor & TPE
-              </Badge>
-              <Badge variant="outline" className="px-3 py-1 text-xs">
-                ⚡ Réponse sous 48h
-              </Badge>
+            {/* Centered text */}
+            <div className="text-center pt-8">
+              <p className="text-lg font-medium text-muted-foreground">
+                ✅ +5 ans d'expérience | 🏔️ Spécialiste outdoor & TPE | ⚡ Réponse sous 48h
+              </p>
             </div>
           </div>
 
@@ -64,8 +58,8 @@ const Hero = () => {
           <div className="col-span-4 relative">
             <div className="relative">
               <img 
-                src="/lovable-uploads/03224d1c-b36a-42b5-8b64-0721f2c5c984.png" 
-                alt="Cloé Capdordy dans la neige avec une veste orange Simond"
+                src="/lovable-uploads/ce9c671c-5e1b-4080-8c6d-b20b7edd9718.png" 
+                alt="Illustration créative de Cloé Capdordy"
                 className="w-full h-auto rounded-2xl shadow-2xl object-cover max-h-80 lg:max-h-96"
               />
               {/* Overlay décoratif */}

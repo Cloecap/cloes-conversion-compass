@@ -6,7 +6,7 @@ const PortfolioSection = () => {
     {
       title: "Tourism Canmore Kananaskis",
       subtitle: "Stratégie Social Media",
-      description: "Développement de la stratégie de contenu pour promouvoir le tourisme outdoor dans les Rocheuses canadiennes. Création de contenus visuels captivants et gestion des campagnes de sensibilisation.",
+      description: "Développement et mise en œuvre de la stratégie social media sur Instagram, Facebook, X, YouTube et Pinterest pour renforcer l'attractivité de la destination et la cohérence de marque.",
       image: "/lovable-uploads/9eeeb140-b074-4753-a457-6a8d11e83897.png",
       tags: ["Social Media", "Tourisme", "Outdoor", "Contenu Visuel"],
       link: "https://cloecapdordy.notion.site/?p=81027734ab1d4735aa03a119363a305b&pm=c"
@@ -14,7 +14,7 @@ const PortfolioSection = () => {
     {
       title: "DR Recrutement International",
       subtitle: "Landing Pages & Stratégie Marketing",
-      description: "Création de landing pages optimisées pour l'acquisition de talents et développement de la stratégie marketing digital pour le recrutement international au Canada.",
+      description: "Définition et déploiement de la stratégie marketing multicanale (candidats et clients). Gestion des réseaux sociaux (Facebook, Instagram, LinkedIn), campagnes publicitaires, création de contenus, landing pages et blog. Développement de l'image de marque au Québec et en Europe.",
       image: "/lovable-uploads/3fa908d1-350b-4388-9af7-3bb3b04f4841.png",
       tags: ["Landing Pages", "Recrutement", "SEO", "Conversion"],
       link: "https://cloecapdordy.notion.site/?p=d2f5d12ee2b6491897590d4e96b9bcd9&pm=c"
@@ -22,7 +22,7 @@ const PortfolioSection = () => {
     {
       title: "Campinfo AGS/ENR",
       subtitle: "Stratégie Communication & YouTube",
-      description: "Mise en place d'une stratégie de communication ciblée pour la région Sud-Ouest, activation du bouche-à-oreille et création d'interviews vidéo pour renforcer la crédibilité.",
+      description: "Déploiement de campagnes marketing digitales, incluant la création de contenus, l'animation des pages d'atterrissage, la production de supports commerciaux (témoignages clients, outils d'aide à la vente) et la mise en place de challenges internes pour dynamiser les équipes.",
       image: "/lovable-uploads/ceb6d50b-aff2-4aae-8003-c74d10932def.png",
       tags: ["Communication", "Vidéo", "YouTube", "B2B", "Énergie"],
       link: "https://cloecapdordy.notion.site/?p=f323c84549024c018a6e0c99f134246d&pm=c",
@@ -31,7 +31,7 @@ const PortfolioSection = () => {
     {
       title: "Groupe Lang & Associés",
       subtitle: "Expertise Automobile",
-      description: "Développement de l'identité de marque et stratégie de communication pour ce groupe spécialisé dans l'expertise automobile.",
+      description: "Conception et déploiement de la stratégie de communication du Groupe Lang & Associés, avec la création de contenus de marque, l'organisation d'événements professionnels, et la production de présentations corporate pour soutenir son développement et affirmer son positionnement sur le marché.",
       image: "/lovable-uploads/836b1a65-55de-46d0-87ee-bb60402bf22b.png",
       tags: ["Branding", "Automobile", "B2B", "Expertise"],
       link: "https://cloecapdordy.notion.site/?p=81a2a2c1242d458b879a216051968f75&pm=c"
