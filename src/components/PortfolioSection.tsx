@@ -7,37 +7,50 @@ const PortfolioSection = () => {
       title: "Tourism Canmore Kananaskis",
       subtitle: "Stratégie Social Media",
       description: "Développement de la stratégie de contenu pour promouvoir le tourisme outdoor dans les Rocheuses canadiennes. Création de contenus visuels captivants et gestion des campagnes de sensibilisation.",
-      image: "/lovable-uploads/95daa73a-ba8d-4fdc-8056-e6160f661417.png",
-      logo: "/lovable-uploads/f97780de-9feb-4fc8-8e11-72a1bf3a97cc.png",
-      tags: ["Social Media", "Tourisme", "Outdoor", "Contenu Visuel"]
+      image: "/lovable-uploads/9eeeb140-b074-4753-a457-6a8d11e83897.png",
+      tags: ["Social Media", "Tourisme", "Outdoor", "Contenu Visuel"],
+      link: "https://cloecapdordy.notion.site/?p=81027734ab1d4735aa03a119363a305b&pm=c"
     },
     {
       title: "DR Recrutement International",
       subtitle: "Landing Pages & Stratégie Marketing",
       description: "Création de landing pages optimisées pour l'acquisition de talents et développement de la stratégie marketing digital pour le recrutement international au Canada.",
-      logo: "/lovable-uploads/554d2fff-ff88-4b03-8556-6791dc16499a.png",
-      tags: ["Landing Pages", "Recrutement", "SEO", "Conversion"]
+      image: "/lovable-uploads/3fa908d1-350b-4388-9af7-3bb3b04f4841.png",
+      tags: ["Landing Pages", "Recrutement", "SEO", "Conversion"],
+      link: "https://cloecapdordy.notion.site/?p=d2f5d12ee2b6491897590d4e96b9bcd9&pm=c"
     },
     {
-      title: "AGS ENR",
-      subtitle: "Stratégie de Communication Régionale",
+      title: "Campinfo AGS/ENR",
+      subtitle: "Stratégie Communication & YouTube",
       description: "Mise en place d'une stratégie de communication ciblée pour la région Sud-Ouest, activation du bouche-à-oreille et création d'interviews vidéo pour renforcer la crédibilité.",
-      logo: "/lovable-uploads/85523f03-c92b-4831-a372-0246a3339f60.png",
-      tags: ["Communication", "Vidéo", "B2B", "Énergie"]
+      image: "/lovable-uploads/ceb6d50b-aff2-4aae-8003-c74d10932def.png",
+      tags: ["Communication", "Vidéo", "YouTube", "B2B", "Énergie"],
+      link: "https://cloecapdordy.notion.site/?p=f323c84549024c018a6e0c99f134246d&pm=c",
+      videoLink: "https://www.youtube.com/watch?v=a6kdVSiRUDc"
     },
     {
       title: "Groupe Lang & Associés",
       subtitle: "Expertise Automobile",
       description: "Développement de l'identité de marque et stratégie de communication pour ce groupe spécialisé dans l'expertise automobile.",
-      logo: "/lovable-uploads/9e0cfa91-fa36-4b65-80a6-45fc4350af7f.png",
-      tags: ["Branding", "Automobile", "B2B", "Expertise"]
+      image: "/lovable-uploads/836b1a65-55de-46d0-87ee-bb60402bf22b.png",
+      tags: ["Branding", "Automobile", "B2B", "Expertise"],
+      link: "https://cloecapdordy.notion.site/?p=81a2a2c1242d458b879a216051968f75&pm=c"
     },
     {
       title: "Identité Visuelle & Branding",
       subtitle: "Création de logos sur mesure",
       description: "Conception d'identités visuelles complètes pour diverses entreprises, de la TPE à la PME, avec une approche créative et stratégique.",
-      logo: "/lovable-uploads/497dac82-e365-43e2-9ca4-d5af6e55b2aa.png",
-      tags: ["Logo", "Branding", "Identité", "Design"]
+      image: "/lovable-uploads/ce9c671c-5e1b-4080-8c6d-b20b7edd9718.png",
+      tags: ["Logo", "Branding", "Identité", "Design"],
+      link: "https://www.behance.net/gallery/127985931/LOGO"
+    },
+    {
+      title: "Illustrations créatives",
+      subtitle: "Design graphique & illustration",
+      description: "Création d'illustrations personnalisées et de contenus graphiques pour diverses applications digitales et print.",
+      image: "/lovable-uploads/ce9c671c-5e1b-4080-8c6d-b20b7edd9718.png",
+      tags: ["Illustration", "Design", "Créativité", "Art"],
+      link: "https://www.behance.net/gallery/127984693/ILLUSTRATION"
     }
   ];
 
@@ -56,43 +69,55 @@ const PortfolioSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {projects.map((project, index) => (
-            <Card key={index} className="bg-card border-0 shadow-lg hover:shadow-xl transition-smooth overflow-hidden group">
-              <div className="aspect-video bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center relative overflow-hidden">
-                {project.image ? (
+            <Card key={index} className="bg-card border-0 shadow-lg hover:shadow-xl transition-smooth overflow-hidden group cursor-pointer">
+              <a href={project.link} target="_blank" rel="noopener noreferrer" className="block">
+                <div className="aspect-video bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center relative overflow-hidden">
                   <img 
                     src={project.image} 
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-smooth"
                   />
-                ) : (
-                  <img 
-                    src={project.logo} 
-                    alt={project.title}
-                    className="max-h-20 max-w-32 object-contain filter group-hover:scale-110 transition-smooth"
-                  />
-                )}
-              </div>
-              <CardContent className="p-6">
-                <h3 className="font-heading text-xl font-bold text-dark mb-2">
-                  {project.title}
-                </h3>
-                <h4 className="font-body text-lg font-semibold text-primary mb-3">
-                  {project.subtitle}
-                </h4>
-                <p className="font-body text-muted-foreground mb-4 leading-relaxed text-sm">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag, tagIndex) => (
-                    <span 
-                      key={tagIndex}
-                      className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full font-medium"
-                    >
-                      {tag}
+                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-smooth flex items-center justify-center">
+                    <span className="text-white font-semibold bg-black/50 px-4 py-2 rounded-full">
+                      Voir le projet →
                     </span>
-                  ))}
+                  </div>
                 </div>
-              </CardContent>
+                <CardContent className="p-6">
+                  <h3 className="font-heading text-xl font-bold text-dark mb-2 group-hover:text-primary transition-smooth">
+                    {project.title}
+                  </h3>
+                  <h4 className="font-body text-lg font-semibold text-primary mb-3">
+                    {project.subtitle}
+                  </h4>
+                  <p className="font-body text-muted-foreground mb-4 leading-relaxed text-sm">
+                    {project.description}
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {project.tags.map((tag, tagIndex) => (
+                      <span 
+                        key={tagIndex}
+                        className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full font-medium"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  {project.videoLink && (
+                    <div className="pt-2 border-t border-border/20">
+                      <a 
+                        href={project.videoLink} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-secondary hover:text-secondary/80 text-sm font-medium transition-smooth"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        🎥 Voir l'interview YouTube
+                      </a>
+                    </div>
+                  )}
+                </CardContent>
+              </a>
             </Card>
           ))}
         </div>
