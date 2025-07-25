@@ -9,17 +9,20 @@ const PortfolioSection = () => {
     {
       title: "Tourism Canmore Kananaskis",
       subtitle: "Stratégie Social Media",
-      description: "Développement et mise en œuvre de la stratégie social media sur Instagram, Facebook, X, YouTube et Pinterest pour renforcer l'attractivité de la destination et la cohérence de marque.",
+      description: "Développement et mise en œuvre de la stratégie social media sur Instagram, Facebook, X, YouTube et Pinterest pour renforcer l'attractivité de la destination et la cohérence de marque. Après avoir analysé nos résultats sur différentes plateformes, j'ai remarqué que notre audience recherchait davantage d'idées de randonnées. Ce réel présente 3 randonnées dans la région. Avec plus de 31 000 vues, il a permis de toucher de nouveaux publics et a atteint un taux d'engagement de plus de 5 %.",
       image: "/lovable-uploads/9eeeb140-b074-4753-a457-6a8d11e83897.png",
       tags: ["Social Media", "Tourisme", "Outdoor", "Contenu Visuel"],
       link: "https://cloecapdordy.notion.site/?p=81027734ab1d4735aa03a119363a305b&pm=c",
       company: "DMO Canmore Kananaskis",
       timeframe: "6 mois - Mars à Septembre 2024",
+      instagramEmbed: "https://www.instagram.com/p/C9h3yMMIQ4I/",
       actions: [
         "Définition et adaptation de la stratégie social media",
-        "Création de contenus visuels pour Instagram et Facebook",
-        "Développement de la cohérence de marque sur tous les canaux",
-        "Gestion des campagnes publicitaires ciblées"
+        "Stratégie UGC",
+        "Copywriting",
+        "Création de contenu vidéo",
+        "Rédaction d'articles de blog / SEO",
+        "Analyse des performances"
       ]
     },
     {
@@ -32,10 +35,13 @@ const PortfolioSection = () => {
       company: "DR Recrutement International",
       timeframe: "12 mois",
       actions: [
-        "Stratégie marketing multicanale complète",
-        "Création et optimisation de landing pages",
-        "Gestion des réseaux sociaux B2B",
-        "Développement de l'image de marque internationale"
+        "Nouveau branding",
+        "Création d'une landing page dédiée aux professionnels",
+        "Publicité (presse écrite et médias en ligne)",
+        "Optimisation des formulaires d'acquisition",
+        "Réseaux sociaux",
+        "Rédaction de contenus pour le blog optimisé SEO",
+        "Campagnes d'emailing"
       ]
     },
     {
@@ -45,7 +51,15 @@ const PortfolioSection = () => {
       image: "/lovable-uploads/ceb6d50b-aff2-4aae-8003-c74d10932def.png",
       tags: ["Communication", "Vidéo", "YouTube", "B2B", "Énergie"],
       link: "https://cloecapdordy.notion.site/?p=f323c84549024c018a6e0c99f134246d&pm=c",
-      videoLink: "https://www.youtube.com/watch?v=a6kdVSiRUDc"
+      videoLink: "https://www.youtube.com/watch?v=a6kdVSiRUDc",
+      actions: [
+        "Gestion des réseaux sociaux",
+        "Création de vidéos témoignages clients",
+        "Mise en place de partenariats avec des clubs sportifs locaux",
+        "Développement de la communication interne (challenges commerciaux)",
+        "Lancement de campagnes d'e-mailing",
+        "Réalisation de campagnes Social Ads"
+      ]
     },
     {
       title: "Groupe Lang & Associés",
@@ -53,7 +67,15 @@ const PortfolioSection = () => {
       description: "Conception et déploiement de la stratégie de communication du Groupe Lang & Associés, avec la création de contenus de marque, l'organisation d'événements professionnels, et la production de présentations corporate pour soutenir son développement et affirmer son positionnement sur le marché.",
       image: "/lovable-uploads/836b1a65-55de-46d0-87ee-bb60402bf22b.png",
       tags: ["Branding", "Automobile", "B2B", "Expertise"],
-      link: "https://cloecapdordy.notion.site/?p=81a2a2c1242d458b879a216051968f75&pm=c"
+      link: "https://cloecapdordy.notion.site/?p=81a2a2c1242d458b879a216051968f75&pm=c",
+      actions: [
+        "Etablissement d'une ligne éditoriale",
+        "Gestion des réseaux sociaux",
+        "Ecriture et mise en page du journal du groupe",
+        "Montage vidéo",
+        "Communication externe et interne (Rôle de porte parole)",
+        "Gestion des événements"
+      ]
     },
     {
       title: "Identité Visuelle & Branding",
@@ -69,7 +91,7 @@ const PortfolioSection = () => {
       description: "🎥 Conception et réalisation de vidéos : interviews, mini-formats, teasers, présentations, tutoriels… 📱 Création de contenus courts et percutants (shorts YouTube, reels Instagram, TikTok) adaptés aux codes des plateformes ✍️ Écriture de scripts clairs et engageants, pensés pour l'émotion, la mémorisation ou l'action",
       image: "/lovable-uploads/content-creation-videos.png",
       tags: ["Vidéo", "Content Creation", "Script", "Social Media"],
-      link: "https://www.behance.net/gallery/127984693/ILLUSTRATION"
+      link: "https://www.canva.com/design/DAGmA0RLXBI/W8Y-Gx7qZGL9irjneYjSUw/view?utm_content=DAGmA0RLXBI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h21cb6e68fd"
     }
   ];
 

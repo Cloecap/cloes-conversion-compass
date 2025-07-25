@@ -17,6 +17,7 @@ interface ProjectModalProps {
     company?: string;
     timeframe?: string;
     actions?: string[];
+    instagramEmbed?: string;
   };
 }
 
@@ -41,11 +42,11 @@ const ProjectModal = ({ isOpen, onClose, project }: ProjectModalProps) => {
         </DialogHeader>
 
         {/* Cover Image */}
-        <div className="aspect-video bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl overflow-hidden">
+        <div className="aspect-[3/2] bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl overflow-hidden">
           <img 
             src={project.image} 
             alt={project.title}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain"
           />
         </div>
 
@@ -88,6 +89,32 @@ const ProjectModal = ({ isOpen, onClose, project }: ProjectModalProps) => {
             {project.description}
           </p>
         </div>
+
+        {/* Instagram Embed */}
+        {project.instagramEmbed && (
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold text-dark">Exemple de contenu publié</h3>
+            <p className="text-muted-foreground">
+              Voici un exemple de contenu publié sur Instagram. Après avoir analysé nos résultats sur différentes plateformes, j'ai remarqué que notre audience recherchait davantage d'idées de randonnées.
+            </p>
+            <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-4 rounded-xl border border-primary/20">
+              <a 
+                href={project.instagramEmbed} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-primary hover:text-primary/80 transition-smooth"
+              >
+                <div className="w-10 h-10 bg-gradient-to-br from-pink-500 to-purple-600 rounded-lg flex items-center justify-center">
+                  <span className="text-white text-lg">📱</span>
+                </div>
+                <div>
+                  <p className="font-semibold">Voir la publication Instagram</p>
+                  <p className="text-sm text-muted-foreground">+31 000 vues • Taux d'engagement 5%</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        )}
 
         {/* Actions */}
         {project.actions && (
