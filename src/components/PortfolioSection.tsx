@@ -1,7 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useState } from "react";
+import ProjectModal from "./ProjectModal";
 
 const PortfolioSection = () => {
+  const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
   const projects = [
     {
       title: "Tourism Canmore Kananaskis",
@@ -9,7 +12,15 @@ const PortfolioSection = () => {
       description: "Développement et mise en œuvre de la stratégie social media sur Instagram, Facebook, X, YouTube et Pinterest pour renforcer l'attractivité de la destination et la cohérence de marque.",
       image: "/lovable-uploads/9eeeb140-b074-4753-a457-6a8d11e83897.png",
       tags: ["Social Media", "Tourisme", "Outdoor", "Contenu Visuel"],
-      link: "https://cloecapdordy.notion.site/?p=81027734ab1d4735aa03a119363a305b&pm=c"
+      link: "https://cloecapdordy.notion.site/?p=81027734ab1d4735aa03a119363a305b&pm=c",
+      company: "DMO Canmore Kananaskis",
+      timeframe: "6 mois - Mars à Septembre 2024",
+      actions: [
+        "Définition et adaptation de la stratégie social media",
+        "Création de contenus visuels pour Instagram et Facebook",
+        "Développement de la cohérence de marque sur tous les canaux",
+        "Gestion des campagnes publicitaires ciblées"
+      ]
     },
     {
       title: "DR Recrutement International",
@@ -17,7 +28,15 @@ const PortfolioSection = () => {
       description: "Définition et déploiement de la stratégie marketing multicanale (candidats et clients). Gestion des réseaux sociaux (Facebook, Instagram, LinkedIn), campagnes publicitaires, création de contenus, landing pages et blog. Développement de l'image de marque au Québec et en Europe.",
       image: "/lovable-uploads/3fa908d1-350b-4388-9af7-3bb3b04f4841.png",
       tags: ["Landing Pages", "Recrutement", "SEO", "Conversion"],
-      link: "https://cloecapdordy.notion.site/?p=d2f5d12ee2b6491897590d4e96b9bcd9&pm=c"
+      link: "https://cloecapdordy.notion.site/?p=d2f5d12ee2b6491897590d4e96b9bcd9&pm=c",
+      company: "DR Recrutement International",
+      timeframe: "12 mois",
+      actions: [
+        "Stratégie marketing multicanale complète",
+        "Création et optimisation de landing pages",
+        "Gestion des réseaux sociaux B2B",
+        "Développement de l'image de marque internationale"
+      ]
     },
     {
       title: "Campinfo AGS/ENR",
@@ -39,17 +58,17 @@ const PortfolioSection = () => {
     {
       title: "Identité Visuelle & Branding",
       subtitle: "Création de logos sur mesure",
-      description: "Conception d'identités visuelles complètes pour diverses entreprises, de la TPE à la PME, avec une approche créative et stratégique.",
+      description: "🔍 Plonger dans l'univers de la marque ✨ Créer un logo unique et cohérent, reflet fidèle de l'essence de l'entreprise 🚀 Faire émerger une identité forte, authentique et mémorable, en phase avec les ambitions de l'entreprise",
       image: "/lovable-uploads/ce9c671c-5e1b-4080-8c6d-b20b7edd9718.png",
       tags: ["Logo", "Branding", "Identité", "Design"],
       link: "https://www.behance.net/gallery/127985931/LOGO"
     },
     {
-      title: "Illustrations créatives",
-      subtitle: "Design graphique & illustration",
-      description: "Création d'illustrations personnalisées et de contenus graphiques pour diverses applications digitales et print.",
-      image: "/lovable-uploads/ce9c671c-5e1b-4080-8c6d-b20b7edd9718.png",
-      tags: ["Illustration", "Design", "Créativité", "Art"],
+      title: "Création de contenus / Vidéos",
+      subtitle: "Production vidéo & contenus courts",
+      description: "🎥 Conception et réalisation de vidéos : interviews, mini-formats, teasers, présentations, tutoriels… 📱 Création de contenus courts et percutants (shorts YouTube, reels Instagram, TikTok) adaptés aux codes des plateformes ✍️ Écriture de scripts clairs et engageants, pensés pour l'émotion, la mémorisation ou l'action",
+      image: "/lovable-uploads/content-creation-videos.png",
+      tags: ["Vidéo", "Content Creation", "Script", "Social Media"],
       link: "https://www.behance.net/gallery/127984693/ILLUSTRATION"
     }
   ];
@@ -69,8 +88,12 @@ const PortfolioSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {projects.map((project, index) => (
-            <Card key={index} className="bg-card border-0 shadow-lg hover:shadow-xl transition-smooth overflow-hidden group cursor-pointer">
-              <a href={project.link} target="_blank" rel="noopener noreferrer" className="block">
+            <Card 
+              key={index} 
+              className="bg-card border-0 shadow-lg hover:shadow-xl transition-smooth overflow-hidden group cursor-pointer"
+              onClick={() => setSelectedProject(project)}
+            >
+              <div className="block">
                 <div className="aspect-video bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center relative overflow-hidden">
                   <img 
                     src={project.image} 
@@ -79,7 +102,7 @@ const PortfolioSection = () => {
                   />
                   <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-smooth flex items-center justify-center">
                     <span className="text-white font-semibold bg-black/50 px-4 py-2 rounded-full">
-                      Voir le projet →
+                      Voir les détails →
                     </span>
                   </div>
                 </div>
@@ -117,10 +140,19 @@ const PortfolioSection = () => {
                     </div>
                   )}
                 </CardContent>
-              </a>
+              </div>
             </Card>
           ))}
         </div>
+
+        {/* Project Modal */}
+        {selectedProject && (
+          <ProjectModal
+            isOpen={!!selectedProject}
+            onClose={() => setSelectedProject(null)}
+            project={selectedProject}
+          />
+        )}
 
         {/* Portfolio complet */}
         <div className="text-center">

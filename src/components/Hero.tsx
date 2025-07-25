@@ -58,8 +58,8 @@ const Hero = () => {
           <div className="col-span-4 relative">
             <div className="relative">
               <img 
-                src="/lovable-uploads/ce9c671c-5e1b-4080-8c6d-b20b7edd9718.png" 
-                alt="Illustration créative de Cloé Capdordy"
+                src="/lovable-uploads/cloe-photo-hero.png" 
+                alt="Cloé Capdordy - Spécialiste marketing et communication digitale"
                 className="w-full h-auto rounded-2xl shadow-2xl object-cover max-h-80 lg:max-h-96"
               />
               {/* Overlay décoratif */}
