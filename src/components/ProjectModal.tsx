@@ -42,7 +42,7 @@ const ProjectModal = ({ isOpen, onClose, project }: ProjectModalProps) => {
         </DialogHeader>
 
         {/* Cover Image */}
-        <div className="aspect-[3/2] bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl overflow-hidden">
+        <div className="max-w-md mx-auto aspect-video bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl overflow-hidden">
           <img 
             src={project.image} 
             alt={project.title}
