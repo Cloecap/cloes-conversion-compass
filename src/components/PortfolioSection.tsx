@@ -81,7 +81,7 @@ const PortfolioSection = () => {
       title: "Identité Visuelle & Branding",
       subtitle: "Création de logos sur mesure",
       description: "🔍 Plonger dans l'univers de la marque ✨ Créer un logo unique et cohérent, reflet fidèle de l'essence de l'entreprise 🚀 Faire émerger une identité forte, authentique et mémorable, en phase avec les ambitions de l'entreprise",
-      image: "/lovable-uploads/ce9c671c-5e1b-4080-8c6d-b20b7edd9718.png",
+      image: "/lovable-uploads/Illustration.jpg",
       tags: ["Logo", "Branding", "Identité", "Design"],
       link: "https://www.behance.net/gallery/127985931/LOGO"
     },

@@ -58,7 +58,7 @@ const Hero = () => {
           <div className="col-span-4 relative">
             <div className="relative">
               <img 
-                src="/lovable-uploads/cloe-photo-hero.png" 
+                src="/lovable-uploads/Image Cloé.jpg" 
                 alt="Cloé Capdordy - Spécialiste marketing et communication digitale"
                 className="w-full h-auto rounded-2xl shadow-2xl object-cover max-h-80 lg:max-h-96"
               />
